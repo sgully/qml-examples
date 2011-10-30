@@ -1,4 +1,5 @@
 import QtQuick 1.0
+import "myjavastuff.js" as JS
 
 Rectangle {
     id: mvc_window
@@ -64,6 +65,7 @@ Rectangle {
                     onClicked: {
                         mvc_listview.currentIndex = index
                         console.debug("Clicked on age")
+                        JS.doSomething()  // Javascript from file
                     }
                 }
             }
